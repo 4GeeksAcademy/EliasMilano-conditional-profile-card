@@ -42,28 +42,22 @@ function render(variables = {}) {
     variables.country == null ? "Country" : variables.country
   }</h3>
           <ul class= ${variables.socialMediaPosition}>
-            <li><a href=${
-              variables.twitter == null
-                ? "https://twitter.com"
-                : variables.twitter
-            }><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://twitter.com/${
+              variables.twitter == null ? "" : variables.twitter
+            }"><i class="fab fa-twitter"></i></a></li>
 
-            <li><a href=${
-              variables.github == null ? "https://github.com" : variables.github
-            }><i class="fab fa-github"></i></a></li>
-            <li><a href=${
-              variables.linkedin == null
-                ? "https://linkedin.com"
-                : variables.linkedin
-            }><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/${
+              variables.github == null ? "" : variables.github
+            }"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${
+              variables.linkedin == null ? "" : variables.linkedin
+            }"><i class="fab fa-linkedin"></i></a></li>
 
-            <li><a href=${
-              variables.instagram == null
-                ? "https://instagram.com"
-                : variables.instagram
-            }><i class="fab fa-instagram"></i></a></li>
-
+            <li><a href="https://instagram.com/${
+              variables.instagram == null ? "" : variables.instagram
+            }"><i class="fab fa-instagram"></i></a></li>
           </ul>
+
         </div>
     `;
 }
